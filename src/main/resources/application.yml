@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: dynamo-example
+
+aws:
+  dynamodb:
+    endpoint: http://localhost:8000
+    region: ap-northeast-2
+    credentials:
+      access-key: local
+      secret-key: local
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.amazonaws.services.dynamodbv2: DEBUG
+    org.tianea.dynamoexample: DEBUG 
